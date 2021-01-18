@@ -117,6 +117,21 @@ li {
 	-ms-transition: all 0.3s ease;
 }
 
+table {
+	width:100%;
+	border:0px;
+	border-spacing:0px;
+	border-collapse:separate;
+	margin-right:auto;
+	margin-left:auto;
+	font-family:"Roboto", sans-serif;
+}
+
+td {
+	padding:20px;
+	width:25%;
+	vertical-align:middle;
+}
 i{
 	padding: 5px;
 	-webkit-transition: all 0.3s ease;
