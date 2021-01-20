@@ -1,14 +1,47 @@
+	/***
+    =============================================== 
+ 
+        Portfolio page 
+        Made by Sueun Lee
+        https://github.com/quicksilversel
+ 
+    =============================================== 
+	***/
+
 body {
     margin:0;
     padding:0;
     background-color:#e7e7e7;
 }
+
 h2{
 	font-family: 'Roboto', sans-serif;
-	font-size: 22px;
+	font-size: 30px;
 	color: black;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	color: black;
+}
+
+h5 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	font-style: italic;
+	color: gray;
+}
+
+/* font awesome */
+i{
+	padding: 5px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
 }
 
 .container {
@@ -32,7 +65,7 @@ h2{
 	z-index: 10;
 }
 
-
+/* navigation start */
 nav {
 	position: relative;
 	background: #FFFFFF;
@@ -70,6 +103,7 @@ nav ul li a:after,
 nav ul li a:before {
   transition: all .5s;
 }
+
 nav ul li a:hover {
   color: #555;
 }
@@ -89,19 +123,19 @@ nav ul li a:after {
 
 nav ul li a:hover:after {
 	width: 100%;
-  }
+}
 
 .navbar .navbar-nav {
 	text-align: center;
 }
 
-i{
-	padding: 5px;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	-ms-transition: all 0.3s ease;
+/* portfolio */
+.portfolio {
+	border-bottom: 1px solid #e7e7e7;
 }
+
+
+/* footer */
 
 .footer{
 	position: relative;
