@@ -16,7 +16,7 @@ body {
 
 h2{
 	font-family: 'Roboto', sans-serif;
-	font-size: 30px;
+	font-size: 27px;
 	color: black;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -48,7 +48,6 @@ i{
 	position:relative;
 	margin: 0 auto;
 	width: 65%;
-	height:1750px;
 	background:#FFFFFF;
 	box-shadow: 0px 0px 15px #bdbdbd;	
 }
@@ -130,10 +129,6 @@ nav ul li a:hover:after {
 }
 
 /* portfolio */
-.portfolio {
-	border-bottom: 1px solid #e7e7e7;
-}
-
 
 /* footer */
 
@@ -148,6 +143,7 @@ nav ul li a:hover:after {
 	padding-left: 3%;
 	padding-right: 3%;
 	padding-bottom: 2%;
+	border-top: 1px solid #e7e7e7;
 	
 }
 
@@ -158,4 +154,47 @@ nav ul li a:hover:after {
 
 .footer i:hover{
 	opacity: 0.6;
+}
+
+/* about me */
+
+.about-me {
+	padding-left: 6%;
+	padding-right: 6%;
+}
+
+.about {
+	padding-top: 3%;
+	padding-bottom: 3%;
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.major {
+	font-family: 'Karma', sans-serif;
+	text-align: left;
+	font-size: 20px;
+	color: #c11603;
+}
+
+.minor {
+	font-family: 'Roboto', sans-serif;
+}
+
+.minor h3 {
+	font-family: 'Karma', sans-serif;
+	font-size : 17px;
+	color: gray;
+	padding-bottom: 5%;
+}
+
+.skills {
+	padding-top: 3%;
+	padding-bottom : 3%;
+}
+
+/* contact */
+
+form {
+	padding-bottom : 3%;
 }
