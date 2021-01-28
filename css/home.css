@@ -31,9 +31,9 @@ h3 {
 h5 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 13px;
-	font-style: italic;
 	color: gray;
 }
+
 
 /* font awesome */
 i{
@@ -162,7 +162,7 @@ nav ul li a:hover:after {
 
 /* about me */
 
-.about-me {
+.article {
 	padding-left: 6%;
 	padding-right: 6%;
 }
