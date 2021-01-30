@@ -47,9 +47,15 @@ i{
 .container {
 	position:relative;
 	margin: 0 auto;
-	width: 65%;
 	background:#FFFFFF;
 	box-shadow: 0px 0px 15px #bdbdbd;	
+}
+
+/* change width on PC devices */
+@media (min-width: 769px ){
+	.container {
+	width: 65%;
+	}
 }
 
 .header {
