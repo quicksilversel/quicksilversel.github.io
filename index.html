@@ -42,12 +42,11 @@
 </head>
 <body>
     <!-- header -->
-    <div class="header text-center" style="margin-bottom:0">
-        <img src="img/header.jpg" style="width:100%">
+    <div class="header text-center">
         <div class="info">
-            <h1 style="font-size: 4.5vw; padding-bottom: 2%;">Sueun Lee</h1>
-            <p style="font-size: 1.5vw; padding-bottom: 10%">I am passionate about developing & designing beautiful things.</p>
-            <a class="button" href=#portfolio style="font-size: 1.2vw">Check my Projects</a>
+            <h1>Sueun Lee</h1>
+            <p>I am passionate about developing & designing beautiful things.</p>
+            <a class="button" href=#portfolio style="font-size: 1em">Check my Projects</a>
         </div>
     </div>
     <!-- navigation -->
@@ -70,7 +69,7 @@
         </ul>  
     </nav>
     <!-- portfolio -->
-    <div id="portfolio">
+    <div id="portfolio" class="container-fluid">
         <h2 class="text-center">Projects</h2>
         <hr style="border-top: 3px solid black; width: 5%;">
         <div class="container">
@@ -78,10 +77,10 @@
             <div class="container">
                 <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
                         <a href="img/projects/virgo_mockup.jpg" data-fancybox="images"><img src="img/projects/virgo_mockup.jpg" alt="Card image cap" style="width:100%"></a>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
                         <h3>Virgo</h3>
                         <h5>Frontend / ReactJS, HTML, CSS</h5>
                         <p>Ecommerce platform for a fictional company "Virgo"</p>
@@ -91,10 +90,10 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
                         <a href="img/projects/expensetracker_mockup.jpg" data-fancybox="images"><img src="img/projects/expensetracker_mockup.jpg" alt="Card image cap" style="width:100%"></a>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
                         <h3>Expense Tracker</h3>
                         <h5>iOS / Swift</h5>
                         <p>Take control of your finance! Expense manager is a quick, real-time money management app for iOS, featuring firebase as backend database.</p>
@@ -104,10 +103,10 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
                         <a href="img/projects/portfolio_mockup.jpg" data-fancybox="images"><img src="img/projects/portfolio_mockup.jpg" alt="Card image cap" style="width:100%"></a>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
                         <h3>Portfolio Website</h3>
                         <h5>Frontend / HTML, CSS, Javascript, JQuery</h5>
                         <p>A portfolio website for developers that features a portfolio section, about section and more. As a matter of fact, you are looking at this page right now!</p>
@@ -117,10 +116,10 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
                         <a href="img/projects/weatherapp_mockup.jpg" data-fancybox="images"><img src="img/projects/weatherapp_mockup.jpg" alt="Card image cap" style="width:100%"></a>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
                         <h3>Weather Finder</h3>
                         <h5>Frontend / ReactJS, HTML, CSS</h5>
                         <p>Tired of typing "weather" on search engines? Weather Finder will quickly return the current weather information at the city of your choice quickly with beautiful images.</p>
@@ -130,12 +129,12 @@
             </div>
         </div>
     </div>
-    <div id="about" style="padding-top: 100px; background-color: white">
+    <div class="container-fluid" id="about" style="padding-top: 100px; background-color: white">
         <h2 class="text-center">About</h2>
         <hr style="border-top: 3px solid black; width: 5%;">
         <div class="container">
             <div class="row about text-center">
-                <div class="col-md-6 col-xs-12">
+                <div class="col-md-6 col-sm-6 col-xs-12">
                     <p>
                         Hi, I'm Sueun. (You can also call me Zoe!)
                         Thank you for visiting my website.
@@ -143,7 +142,7 @@
                         I am passionate about building things on the internet, especially websites and mobile applications.                    
                     </p>
                 </div>
-                <div class="col-md-6 col-xs-12">
+                <div class="col-md-6 col-sm-6 col-xs-12">
                     <p>
                         KAIST(韓国科学技術院)情報科学部のリ・スウンと申します。
                         大学では情報科学を専攻しでおり、特にソフトウェア開発に興味を持っでおります。HTML、CSS、Javascriptフレームワークを使用したフロントエンドWeb開発、およびswiftを使用したiOSアプリ開発の経験があります。
@@ -153,7 +152,7 @@
                 </div>
             </div>
             <div class="row skills">
-                <div class="col-md-6 col-xs-12 developer">
+                <div class="col-md-6 col-sm-6 col-xs-12 developer" style="padding-bottom: 2%">
                     <h3 class="text-center"><i class="fa fa-code"></i>developer</h3>
                     <div id="bar">
                         <div class="skill html">HTML / CSS</div>
@@ -180,7 +179,7 @@
                         <div class="skill scala">Scala</div>
                     </div>
                 </div>
-                <div class="col-md-6 col-xs-12 designer" style="border-left: 1px solid #e7e7e7">
+                <div class="col-md-6 col-sm-6 col-xs-12 designer" style="border-left: 1px solid #e7e7e7">
                     <h3 class="text-center"><i class="fa fa-html5"></i>designer</h3>
                     <div id="bar">
                         <div class="skill photoshop">Photoshop</div>
@@ -200,7 +199,7 @@
         </div>
     </div>
     <!-- footer -->
-    <div class="footer" id="contact">
+    <div class="footer container-fluid" id="contact">
         <h2 class="text-center">Contact</h2>
         <hr style="border-top: 3px solid black; width: 5%; padding-bottom: 1%">
         <p class="text-center">Feel free to contact me if you like my work and want to work together!</p>
