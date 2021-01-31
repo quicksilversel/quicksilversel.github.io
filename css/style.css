@@ -1,0 +1,281 @@
+	/***
+    =============================================== 
+ 
+        Portfolio page 
+        Made by Sueun Lee
+        https://github.com/quicksilversel
+ 
+    =============================================== 
+	***/
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+    background-color: #f6f6f6;
+}
+
+h2{
+	font-family:"Yantramanav", sans-serif;
+	text-transform: uppercase;
+	font-size: 35px;
+	letter-spacing: 2px;
+	color: black;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+/* font awesome */
+i{
+	padding: 5px;
+}
+
+/* navigation */
+nav {
+	position: relative;
+	background: #FFFFFF;
+	font-family: 'Roboto', sans-serif;
+	background-color: #FFFFFF;
+	width: 100%;
+	font-size: 16px;
+	padding-top: 1%;
+	padding-bottom: 1%;
+    border-bottom:1px solid #e7e7e7;
+	z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+  	text-align: center;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+.active a {
+	color: #c11603;
+}
+
+nav ul li a {
+	color:black;
+	position: relative;
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	font-weight: 800;
+	margin: 0 10px;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+nav ul li a:hover {
+  color:#c11603;
+}
+
+nav ul li a:after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0%;
+	content: '.';
+	color: transparent;
+	background: #c11603;
+	height: 1px;
+}
+
+nav ul li a:hover:after {
+	width: 100%;
+}
+
+.navbar {
+	transition: all 1s ease;
+}
+
+.navbar.fixed-top {
+	transition: all 1s ease;
+}
+
+.navbar .navbar-nav {
+	text-align: center;
+}
+
+/* header */
+
+
+.header #info {
+	font-family: 'Roboto', sans-serif;
+	display: block;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	  
+}
+
+.header {
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+.button {
+	font-family: "Roboto";
+	padding: 3% 5%;
+	color: white;
+	font-size: 20px;
+	border: 2px solid white;
+	text-transform: uppercase;
+	border-radius: 4px;
+	text-decoration: none;
+	transition: all 0.5s ease-in-out;
+}
+
+.header a:hover {
+	background-color: white;
+	color:black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+/* portfolio */
+#portfolio {
+	padding-bottom: 2%;
+}
+
+#porfolio .row {
+	display : flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-flow: row wrap;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+
+#portfolio h5 {
+	font-size: 13px;
+	color: gray;
+}
+
+.card-body {
+	background-color: white;
+	margin-bottom: 2%;
+}
+
+/* about me */
+
+.article {
+	padding-left: 6%;
+	padding-right: 6%;
+}
+
+.about {
+	padding-top: 3%;
+	padding-bottom: 3%;
+	border-bottom: 1px solid #e7e7e7;
+	font-family: "Raleway";
+}
+
+.skills h3 {
+	font-family: 'Yantramanav', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size : 30px;
+	color:black;
+	padding-bottom: 5%;
+}
+
+.skills {
+	padding-top: 3%;
+	padding-bottom : 3%;
+}
+
+.skills #bar {
+	width: 100%; 
+	background-color: #ddd;
+	margin-top : 2%;
+	margin-bottom: 2%;
+	
+}
+
+#bar .skill {
+	color: white;
+	font-family: 'Roboto';
+	font-size: 15px;
+	padding: 1%;
+}
+
+.html {width: 90%; background-color: black;} 
+.js {width: 80%; background-color: black;} 
+.react {width: 80%; background-color:black;} 
+.swift {width: 75%; background-color: black;}
+.python {width: 60%; background-color: black;} 
+.c-lang {width: 60%; background-color: black;} 
+.java {width: 40%; background-color: black;} 
+.scala {width: 40%; background-color:black;} 
+
+.photoshop {width: 80%; background-color:black;} 
+
+.english {width: 90%; background-color:black;} 
+.japanese {width: 70%; background-color:black;} 
+.korean {width: 70%; background-color:black;} 
+
+/* footer */
+
+.footer{
+	background-color: #f6f6f6;	
+	padding-left: 2%;
+	padding-right: 2%;
+	margin-top: 2%;
+	
+}
+
+.footer label {
+	color:black;
+}
+
+.footer h2 {
+	color: black;
+}
+
+.footer p {
+	font-family: "Raleway"
+}
+
+.footer a {
+	text-decoration: none;
+	color: black;
+}
+
+.footer i:hover{
+	opacity: 0.6;
+}
+
+.footer #button {
+	border: 2px solid black;
+	padding: 1% 5%;
+	font-size: 15px;
+	font-family: "Yantramanav", sans-serif;
+	text-transform: uppercase;
+	transition: all 0.5s ease-in-out;
+}
+
+.footer #button:hover {
+	background-color: black;
+	color: white;
+	text-decoration: none;
+}
