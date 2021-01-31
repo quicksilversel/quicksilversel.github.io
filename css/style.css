@@ -261,11 +261,16 @@ nav ul li a:hover:after {
 	color: black;
 }
 
+.footer .row {
+	padding: 1.5%;
+}
+
 .footer i:hover{
 	opacity: 0.6;
 }
 
 .footer #button {
+	width: 30%;
 	border: 2px solid black;
 	padding: 1% 5%;
 	font-size: 15px;
