@@ -26,7 +26,24 @@ h2{
 	letter-spacing: 2px;
 	color: black;
 	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 2%;
+}
+
+#button {
+	width: 30%;
+	border: 2px solid black;
+	color: black;
+	padding: 1% 5%;
+	font-size: 15px;
+	font-family: "Yantramanav", sans-serif;
+	text-transform: uppercase;
+	transition: all 0.5s ease-in-out;
+}
+
+#button:hover {
+	background-color: black;
+	color: white;
+	text-decoration: none;
 }
 
 
@@ -114,7 +131,7 @@ nav ul li a:hover:after {
 /* header */
 
 
-.header #info {
+.header .info {
 	font-family: 'Roboto', sans-serif;
 	display: block;
 	color: white;
@@ -131,7 +148,7 @@ nav ul li a:hover:after {
 	position: relative;
 }
 
-.button {
+.header .button {
 	font-family: "Roboto";
 	padding: 3% 5%;
 	color: white;
@@ -150,10 +167,27 @@ nav ul li a:hover:after {
 	cursor: pointer;
 }
 
+.info {
+	transition: all 0.5s ease-in-out;
+}
+
+.hidden {
+	opacity: 0;
+}
+
 
 /* portfolio */
 #portfolio {
 	padding-bottom: 2%;
+}
+
+#portfolio h3 {
+	font-family: "Raleway";
+	font-weight:400;
+}
+
+#portfolio .container {
+	padding: 2%;
 }
 
 #porfolio .row {
@@ -269,18 +303,3 @@ nav ul li a:hover:after {
 	opacity: 0.6;
 }
 
-.footer #button {
-	width: 30%;
-	border: 2px solid black;
-	padding: 1% 5%;
-	font-size: 15px;
-	font-family: "Yantramanav", sans-serif;
-	text-transform: uppercase;
-	transition: all 0.5s ease-in-out;
-}
-
-.footer #button:hover {
-	background-color: black;
-	color: white;
-	text-decoration: none;
-}
