@@ -55,7 +55,6 @@ i{
 
 /* navigation */
 nav {
-	background: #FFFFFF;
 	font-family: 'Roboto', sans-serif;
 	background-color: #FFFFFF;
 	width: 100%;
@@ -66,7 +65,6 @@ nav {
 
 nav ul {
     list-style: none;
-  	text-align: center;
 }
 
 nav ul li {
@@ -85,6 +83,7 @@ nav ul li a {
 	text-decoration: none;
 	font-weight: 800;
 	margin: 0 10px;
+	text-align: start;
 }
 
 nav ul li a,
@@ -187,6 +186,15 @@ nav ul li a:hover:after {
 /* portfolio */
 #portfolio {
 	padding-bottom: 2%;
+	overflow: hidden;
+}
+
+#portfolio img {
+	transition: transform 0.5s ease;
+}
+
+#portfolio img:hover {
+	transform: scale(1.1);
 }
 
 #portfolio h3 {
