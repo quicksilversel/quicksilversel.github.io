@@ -25,4 +25,12 @@ $(document).ready(function() {
     $(this).parent().addClass("active"); 
   });
 
+  // skill bars 
+
+  $('#bar .progress-bar').css("width",
+    function() {
+        return $(this).attr("aria-valuenow") + "%";
+    }
+  )
+
 });

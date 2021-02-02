@@ -260,27 +260,16 @@ nav ul li a:hover:after {
 	
 }
 
-#bar .skill {
+#bar .progress-bar {
 	color: white;
 	font-family: 'Roboto';
 	font-size: 15px;
 	padding: 1%;
+	width:0%;
+	background-color:black;
+	transition: all 1.5s ease;
+	text-align: left;
 }
-
-.html {width: 90%; background-color: black;} 
-.js {width: 80%; background-color: black;} 
-.react {width: 80%; background-color:black;} 
-.swift {width: 75%; background-color: black;}
-.python {width: 60%; background-color: black;} 
-.c-lang {width: 60%; background-color: black;} 
-.java {width: 40%; background-color: black;} 
-.scala {width: 40%; background-color:black;} 
-
-.photoshop {width: 80%; background-color:black;} 
-
-.english {width: 90%; background-color:black;} 
-.japanese {width: 70%; background-color:black;} 
-.korean {width: 70%; background-color:black;} 
 
 /* footer */
 
