@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
     <!-- 
     =============================================== 
@@ -74,8 +74,8 @@
         <hr style="border-top: 3px solid black; width: 5%;">
         <div class="container">
             <!-- projects -->
-            <!-- project 1-->
-            <div class="container">
+            <!-- project 1 -->
+            <div class="container" id="projects">
                 <div class="row">
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <a href="img/projects/expensetracker_mockup.jpg" data-fancybox="images"><img src="img/projects/expensetracker_mockup.jpg" alt="Card image cap" style="width:100%"></a>
@@ -83,12 +83,12 @@
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <h3>Expense Tracker</h3>
                         <h5>iOS / Swift</h5>
-                        <p>Take control of your finance! Expense manager is a quick, real-time money management app for iOS, featuring firebase as backend database. Expense manager also displays your transactions data in a clean pie chart.</p>
-                        <a href="https://github.com/quicksilversel/expense_tracker" target= "_blank" id="button"><i class="fa fa-github"></i>View on Github</a>
+                        <p>家計簿アプリを制作しました。タイプ別などで支出をグラフ化して比較できる機能もあります。</p>
+                        <a href="https://github.com/quicksilversel/expense_tracker" target= "_blank" id="button"><i class="fa fa-github"></i>ソースコードを見る</a>
                     </div>
                 </div>
             </div>
-            <!-- project 2 -->
+            <!-- project 2-->
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-6 col-xs-12">
@@ -96,19 +96,19 @@
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <h3>Virgo</h3>
-                        <h5>Frontend / ReactJS, HTML, CSS</h5>
-                        <h5>Backend / Python Django Rest Framework</h5>
-                        <p>Virgo is e-commerce website template featuring a home page with featured products, a products page, and more.</p>
+                        <h5>フロントエンド / ReactJS, HTML, CSS</h5>
+                        <h5>バックエンド / Python Django Rest Framework</h5>
+                        <p>ReactJSとPython Django Rest Frameworkを用いてEコマースサイトを制作しました。</p>
                         <div>
-                            <a href="https://github.com/quicksilversel/ecommerce-virgo" target= "_blank" id="button"><i class="fa fa-github"></i>View on Github (Client Side)</a>
+                            <a href="https://github.com/quicksilversel/ecommerce-virgo" target= "_blank" id="button"><i class="fa fa-github"></i>ソースコードを見る(Client)</a>
                         </div>
                         <div style="padding-top: 3%;">
-                            <a href="https://github.com/quicksilversel/django_ecommerce" target= "_blank" id="button"><i class="fa fa-github"></i>View on Github (Server Side)</a>
+                            <a href="https://github.com/quicksilversel/django_ecommerce" target= "_blank" id="button"><i class="fa fa-github"></i>ソースコードを見る(Server)</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- project 3 -->
+            <!-- project 3-->
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-6 col-xs-12">
@@ -116,13 +116,15 @@
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <h3>Portfolio Website</h3>
-                        <h5>Frontend / VanillaJS, AnimeJS, JQuery, HTML, CSS</h5>
-                        <p>A portfolio website featuring a projects display section, about section with animated skill bars and more. It is ideal for developers who want to showcase their skills and work. As a matter of fact, you are looking at this page right now!</p>
-                        <a href="https://github.com/quicksilversel/quicksilversel.github.io" target= "_blank" id="button"><i class="fa fa-github"></i>View on Github</a>
+                        <h5>フロントエンド / VanillaJS, AnimeJS JQuery, HTML, CSS</h5>
+                        <p>ポートフォリオサイトを制作しました。
+                        </p>
+                        <a href="https://github.com/quicksilversel/quicksilversel.github.io" target= "_blank" id="button"><i class="fa fa-github"></i>ソースコードを見る</a>
                     </div>
                 </div> 
             </div>  
         </div>
+    </div>
     </div>
     <!-- about -->
     <div class="container-fluid" id="about" style="padding-top: 100px; background-color: white">
@@ -155,15 +157,13 @@
                         </div>
                     </p>
                 </div>
-                <!-- about text -->
-                <div class="col-md-6 col-sm-12 about-text">
+                <!-- about -->
+                <div class="col-md-6 col-sm-6 col-xs-12">
                     <p>
-                        Hi, I'm Sueun. (You can also call me Zoe!)
-                        Thank you for visiting my website.
-                        I am currently a senior at university where I am majoring in computer science.
-                        I am looking for a full time position in 2022.
-                        I am passionate about building things on the internet, especially websites and mobile applications.     
-                        I occasionally take freelance opportunities.             
+                        KAIST(韓国科学技術院)情報科学部のリ・スウンと申します。
+                        HTML、CSS、Javascriptフレームワークを用いたフロントエンドWeb開発、およびswiftを用いたiOSアプリ開発の経験があり、ソフトウェア開発へ活かしたいと考えています。
+                        4歳から11歳まで海外に住んでいたため、英語力に自負しております。また、大学の授業も全て英語でいただいています。
+                        2022年9月卒業後、英語力とこれまでの経験を生かしつつソフトエンジニアとして、貢献していきたいと思っています。
                     </p>
                 </div>
             </div>
@@ -206,13 +206,13 @@
                     </div>
                     <h3 class="text-center" style="padding-top:3%"><i class="fa fa-language"></i>languages</h3>
                     <div id="bar">
-                        <div class="progress-bar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">English</div>
+                        <div class="progress-bar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">英語（TOEIC 975点）</div>
                     </div>
                     <div id="bar">
-                        <div class="progress-bar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">Japanese</div>
+                        <div class="progress-bar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">日本語（JLPT N2)</div>
                     </div>
                     <div id="bar">
-                        <div class="progress-bar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">Korean</div>
+                        <div class="progress-bar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">韓国語</div>
                     </div>
                 </div>  
             </div>
@@ -222,9 +222,8 @@
     <div class="footer container-fluid" id="contact">
         <h2 class="text-center">Contact</h2>
         <hr style="border-top: 3px solid black; width: 5%; padding-bottom: 1%">
-        <p class="text-center">Feel free to contact me if you like my work and want to work together!</p>
         <div style="padding-top: 1%; padding-bottom: 2%;">
-            <div class="row text-center ">
+            <div class="row text-center">
                 <div class="col-md-4 col-sm-12 text-center contacts">
                     <a href="https://github.com/quicksilversel" target="_blank" id="button"><i class="fa fa-github-square"></i>check my Github</a>
                 </div>
@@ -235,6 +234,8 @@
                     <a href="https://www.upwork.com/freelancers/~01169c6837c173da48" id="button"><i class="fa fa-briefcase"></i>check my Upwork</a>
                 </div>
             </div>
+            <!-- <a href="https://www.instagram.com/snowlightalley/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a> -->
+
         </div>
     </div>  
 </body>

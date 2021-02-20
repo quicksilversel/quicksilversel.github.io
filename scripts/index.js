@@ -26,11 +26,32 @@ $(document).ready(function() {
   });
 
   // skill bars 
-
   $('#bar .progress-bar').css("width",
     function() {
         return $(this).attr("aria-valuenow") + "%";
     }
   )
+
+  // business card animation 
+  var card = document.querySelector(".about-card");
+  var playing = false;
+
+  card.addEventListener('click',function() {
+    if(playing)
+      return;
+    
+    playing = true;
+    anime({
+      targets: card,
+      scale: [{value: 1}, {value: 1.4}, {value: 1, delay: 250}],
+      rotateY: {value: '+=180', delay: 200},
+      easing: 'easeInOutSine',
+      duration: 400,
+      complete: function(anim){
+        playing = false;
+      }
+    });
+});
+
 
 });

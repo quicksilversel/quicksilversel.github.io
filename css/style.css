@@ -125,6 +125,12 @@ nav ul li a:hover:after {
 	text-align: center;
 }
 
+/* language selector */
+
+#language a:hover {
+	color:#c11603;
+}
+
 /* header */
 
 .header {
@@ -157,7 +163,7 @@ nav ul li a:hover:after {
 
 .header .button {
 	font-family: "Yantramanav";
-	padding: 2%;
+	padding: 1% 3%;
 	color: white;
 	font-size: 20px;
 	border: 2px solid white;
@@ -236,6 +242,82 @@ nav ul li a:hover:after {
 	padding-top: 3%;
 	padding-bottom: 3%;
 	font-family: "Raleway";
+	justify-content: center;
+	align-items: center;
+}
+
+/* Card animation */
+.card-container
+{
+    font-family: 'Yantramanav', sans-serif;
+    width: 300px;
+    height: 180px;
+    margin: 0 auto;
+    border-radius: 10px;
+    perspective: 1400px;
+	text-transform: uppercase;
+}
+
+.about-card
+{
+    position: relative;
+    height: 100%;
+    border-radius: 10px;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+
+.front, .back
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    backface-visibility: hidden;
+	box-shadow: 0 6px 15px -2px rgb(50 50 93 / 25%), 0 3px 7px -3px rgb(0 0 0 / 30%);
+}
+
+.front
+{
+    color: white;
+    background: black;
+	font-size: 50px;
+	justify-content: center;
+    align-items: center;
+}
+
+.back
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    color: black;
+    background: white;
+	font-size: 17px;
+	text-align: left;
+	display: inline;
+	padding-left: 5%;
+	padding-top: 2%;
+}
+
+.back p {
+	font-size: 17px;
+	text-align: left;
+}
+
+.back a {
+	color: black;
+	text-decoration: none;
+}
+
+.back a:hover {
+	color: #9e9e9e;
+}
+
+.about-text {
+	justify-content: center;
+    align-items: center;
 }
 
 .skills h3 {
@@ -281,10 +363,6 @@ nav ul li a:hover:after {
 	
 }
 
-.footer label {
-	color:black;
-}
-
 .footer h2 {
 	color: black;
 }
@@ -298,11 +376,8 @@ nav ul li a:hover:after {
 	color: black;
 }
 
-.footer .row {
-	padding: 1.5%;
+@media screen and (max-width: 768px) {
+    .footer .contacts {
+		margin: 2% auto;
+	}
 }
-
-.footer i:hover{
-	opacity: 0.6;
-}
-
