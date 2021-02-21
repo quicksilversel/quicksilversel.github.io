@@ -195,11 +195,11 @@ nav ul li a:hover:after {
 	overflow: hidden;
 }
 
-#portfolio img {
+#projects img {
 	transition: transform 0.5s ease;
 }
 
-#portfolio img:hover {
+#projects img:hover {
 	transform: scale(1.1);
 }
 
@@ -231,6 +231,71 @@ nav ul li a:hover:after {
 	margin-bottom: 2%;
 }
 
+/* freelance section */ 
+
+#upwork img {
+	width: 100%;
+	backface-visibility: hidden;
+}
+
+.upwork-project {
+	position: relative;
+}
+
+.caption {
+    position: absolute;		
+    top: 15px;
+    left: 40px;
+    right: 40px;
+    bottom: 15px;
+	border-radius: 10px;
+    opacity: 0;
+    transition: all 0.8s ease;		
+	background-color: black;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	padding: 0 5%;
+}
+
+.upwork-project:hover .caption {
+	opacity: 0.8;
+	overflow: hidden;
+}
+
+.caption p,
+.caption a {
+	color: white;
+    text-align: center;
+	font-size: 15px;
+    opacity: 0;
+    transition: opacity .4s .2s;
+}
+
+.caption p {
+	background: transparent;
+	font-family: "Raleway", sans-serif;
+}
+
+.caption a {
+	background: #ae895d;
+	padding: 2%;
+	border-radius: 2px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: "Yantramanav", sans-serif;
+}
+
+.upwork-project:hover .caption p {
+    opacity: 1;
+}
+
+.upwork-project:hover .caption a {
+    opacity: 1;
+}
+
+
 /* about me */
 
 .article {
@@ -256,6 +321,7 @@ nav ul li a:hover:after {
     border-radius: 10px;
     perspective: 1400px;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 
 .about-card
@@ -357,10 +423,7 @@ nav ul li a:hover:after {
 
 .footer{
 	background-color: #f6f6f6;	
-	padding-left: 2%;
-	padding-right: 2%;
 	margin-top: 2%;
-	
 }
 
 .footer h2 {
