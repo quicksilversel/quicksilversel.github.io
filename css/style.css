@@ -357,7 +357,7 @@ nav ul li a:hover:after {
     position: absolute;
     top: 0;
     left: 0;
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) translateZ(1px);
     color: black;
     background: white;
 	font-size: 17px;
@@ -385,6 +385,8 @@ nav ul li a:hover:after {
 	justify-content: center;
     align-items: center;
 }
+
+/* skill bars */
 
 .skills h3 {
 	font-family: 'Yantramanav', sans-serif;
