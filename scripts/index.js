@@ -1,7 +1,23 @@
 $(document).ready(function() {
-  if ($(window).width() > 992) 
+
+  /* 
+  // loader 
+  $('body').append('<div id="loadingDiv"><div class="loader">Loading...</div></div>');
+  $(window).on('load', function(){
+    setTimeout(removeLoader, 800); 
+  });
+
+  function removeLoader(){
+      $( "#loadingDiv" ).fadeOut(500, function() {
+        // Remove loader 
+        $( "#loadingDiv" ).remove(); 
+    });  
+  }
+
+  */
 
   // fixed navigation bar on scroll 
+  if ($(window).width() > 992) 
   {
     $(window).scroll(function(){  
       var topValue = document.getElementById("portfolio").offsetTop
