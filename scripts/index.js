@@ -1,20 +1,8 @@
 $(document).ready(function() {
-
-  /* 
   // loader 
-  $('body').append('<div id="loadingDiv"><div class="loader">Loading...</div></div>');
-  $(window).on('load', function(){
-    setTimeout(removeLoader, 800); 
-  });
-
-  function removeLoader(){
-      $( "#loadingDiv" ).fadeOut(500, function() {
-        // Remove loader 
-        $( "#loadingDiv" ).remove(); 
-    });  
-  }
-
-  */
+  setTimeout(function() {
+    $('.loading-container').fadeOut('fast');
+  }, 1000);
 
   // fixed navigation bar on scroll 
   if ($(window).width() > 992) 
@@ -32,8 +20,7 @@ $(document).ready(function() {
           $(".info").removeClass("hidden");
         }   
     });
-  } 
-  
+  }
 
   // change active list on click
   $(".nav-link").click(function(){ 
