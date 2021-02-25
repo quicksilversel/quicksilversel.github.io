@@ -167,6 +167,73 @@ i{
 	padding: 5px;
 }
 
+/* language selector */
+
+#language a:hover {
+	color:#c11603;
+}
+
+/* header */
+
+.header {
+	background-image: url(../img/header.jpg);
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header .header-text {
+	display: block;
+	color: white;
+	width: 90%;
+}
+
+.header-text h1 {
+	font-size: 60px; 
+	padding-bottom: 2%; 
+	font-family: 'Yantramanav', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.header-text p {
+	font-size: 18px;
+	padding-bottom: 4.5%;
+	font-family: "Raleway";
+	word-break: break-word;
+}
+
+.header-text {
+	transition: all 0.5s ease-in-out;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.header .button {
+	font-family: "Yantramanav", sans-serif;
+	padding: 1% 3%;
+	color: white;
+	font-size: 20px;
+	border: 2px solid white;
+	text-transform: uppercase;
+	border-radius: 4px;
+	text-decoration: none;
+	transition: all 0.5s ease-in-out;
+}
+
+.header a:hover {
+	background-color: white;
+	color:black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+
 /* navigation */
 nav {
 	font-family: 'Roboto', sans-serif;
@@ -239,68 +306,7 @@ nav ul li a:hover:after {
 	text-align: center;
 }
 
-/* language selector */
 
-#language a:hover {
-	color:#c11603;
-}
-
-/* header */
-
-.header {
-	background-image: url(../img/header.jpg);
-	background-size: cover;
-	padding: 10em 0;
-}
-
-.header .info {
-	display: block;
-	color: white;
-	width: 90%;
-	margin: 0 auto;
-}
-
-.info h1 {
-	font-size: 60px; 
-	padding-bottom: 2%; 
-	font-family: 'Yantramanav', sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-}
-
-.info p {
-	font-size: 18px;
-	padding-bottom: 8%;
-	font-family: "Raleway";
-	word-break: break-word;
-}
-
-.header .button {
-	font-family: "Yantramanav";
-	padding: 1% 3%;
-	color: white;
-	font-size: 20px;
-	border: 2px solid white;
-	text-transform: uppercase;
-	border-radius: 4px;
-	text-decoration: none;
-	transition: all 0.5s ease-in-out;
-}
-
-.header a:hover {
-	background-color: white;
-	color:black;
-	text-decoration: none;
-	cursor: pointer;
-}
-
-.info {
-	transition: all 0.5s ease-in-out;
-}
-
-.hidden {
-	opacity: 0;
-}
 
 
 /* portfolio */
