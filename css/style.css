@@ -57,7 +57,7 @@ h2{
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1001;
+  z-index: 10000;
   position: fixed;
 }
 .loading-container .loading {
@@ -353,6 +353,16 @@ nav ul li a:hover:after {
 
 /* freelance section */ 
 
+#upwork .row {
+	display: block;
+	overflow-x: auto;
+	white-space: nowrap;
+}
+
+#upwork .row .col-lg-4 {
+	display: inline-block;
+}
+
 #upwork img {
 	width: 100%;
 	backface-visibility: hidden;
@@ -414,7 +424,6 @@ nav ul li a:hover:after {
 .upwork-project:hover .caption a {
     opacity: 1;
 }
-
 
 /* about me */
 
