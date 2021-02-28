@@ -2,7 +2,7 @@ $(document).ready(function() {
   // loader 
   setTimeout(function() {
     $('.loading-container').fadeOut('fast');
-  }, 1000);
+  }, 0);
 
   // fixed navigation bar on scroll 
   if ($(window).width() > 992) 

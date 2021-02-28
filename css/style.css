@@ -372,6 +372,13 @@ nav ul li a:hover:after {
 	position: relative;
 }
 
+
+@media screen and (max-width: 768px) {
+    .upwork-project {
+		width:80%;
+	}
+}
+
 .caption {
     position: absolute;		
     top: 15px;
