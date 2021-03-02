@@ -2,7 +2,21 @@ $(document).ready(function() {
   // loader 
   setTimeout(function() {
     $('.loading-container').fadeOut('fast');
-  }, 0);
+  }, 1500);
+
+  // fade into view
+  $(window).scroll(function() {
+    $('.fade-in').each(function() {
+        var top_of_element = $(this).offset().top;
+        var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+        var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+        var top_of_screen = $(window).scrollTop();
+
+        if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element) && !$(this).hasClass('is-visible')) {
+          $(this).addClass('is-visible');
+        }
+      });
+  });
 
   // fixed navigation bar on scroll 
   if ($(window).width() > 992) 
@@ -29,11 +43,23 @@ $(document).ready(function() {
   });
 
   // skill bars 
-  $('#bar .progress-bar').css("width",
-    function() {
-        return $(this).attr("aria-valuenow") + "%";
-    }
-  )
+
+  $(window).scroll(function() {
+    $('#bar .progress-bar').each(function() {
+        var top_of_element = $(this).offset().top;
+        var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+        var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+        var top_of_screen = $(window).scrollTop();
+
+        if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element) && !$(this).hasClass('is-visible')) {
+          $(this).css("width",
+          function() {
+              return $(this).attr("aria-valuenow") + "%";
+          })
+        }
+      });
+  });
+
 
   // business card animation 
   var card = document.querySelector(".about-card");
