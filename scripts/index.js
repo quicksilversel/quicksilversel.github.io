@@ -2,7 +2,7 @@ $(document).ready(function() {
   // loader 
   setTimeout(function() {
     $('.loading-container').fadeOut('fast');
-  }, 1500);
+  }, 4000);
 
   // fade into view
   $(window).scroll(function() {
