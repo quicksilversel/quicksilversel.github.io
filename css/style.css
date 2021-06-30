@@ -416,7 +416,7 @@ nav ul li a:hover:after {
 }
 
 .upwork-project:hover .caption {
-	opacity: 0.8;
+	opacity: 0.9;
 	overflow: hidden;
 }
 
