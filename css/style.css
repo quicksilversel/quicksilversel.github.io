@@ -78,7 +78,6 @@ body {
   align-items: center;
   z-index: 10000;
   position: fixed;
-  opacity: 0; /* loader is hidden for now*/
 }
 .loading-container .loading {
   width: 80px;
