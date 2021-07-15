@@ -25,7 +25,7 @@
     <!-- css -->
     <link href="css/style.css" type="text/css", rel="stylesheet">
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/65a65454b1.js" crossorigin="anonymous"></script>
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
@@ -63,13 +63,13 @@
     <nav class="navbar navbar-expand-sm">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href=#portfolio><i class="fa fa-folder-open-o"></i>portfolio</a>
+                <a class="nav-link" href=#portfolio><i class="far fa-folder-open"></i>portfolio</a>
             </li>    
             <li class="nav-item">
-                <a class="nav-link" href="#about"><i class="fa fa-user-o"></i>about</a>
+                <a class="nav-link" href="#about"><i class="far fa-user"></i>about</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#contact"><i class="fa fa-envelope-o"></i>contact</a>
+                <a class="nav-link" href="#contact"><i class="far fa-envelope"></i>contact</a>
             </li>
         </ul> 
         <ul class="navbar-nav ml-auto" id="language">
@@ -79,7 +79,7 @@
     </nav>
     <!-- portfolio -->
     <div id="portfolio" class="container-fluid">
-        <h2 class="text-center">Projects</h2>
+        <h2 class="text-center section_name">Projects</h2>
         <hr style="border-top: 3px solid black; width: 5%;">
         <div class="container" id="projects">
             <!-- projects -->
@@ -90,6 +90,7 @@
                         <a href="img/projects/expensetracker_mockup2.jpg" data-fancybox="images"><img src="img/projects/expensetracker_mockup2.jpg" alt="Card image cap" style="width:100%"></a>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p id="project-icon"><i class="fab fa-swift fa-lg"></i></p>
                         <h3>Expense Tracker</h3>
                         <h5>iOS / Swift</h5>
                         <p>家計簿アプリを制作しました。デザインは友達のMarinaにデザインさせて頂きました。</p>
@@ -104,6 +105,7 @@
                         <a href="img/projects/virgo_mockup.jpg" data-fancybox="images"><img src="img/projects/virgo_mockup.jpg" alt="Card image cap" style="width:100%"></a>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p id="project-icon"><i class="fab fa-html5 fa-lg"></i><i class="fab fa-css3-alt fa-lg"></i><i class="fab fa-react fa-lg"></i><i class="fab fa-python fa-lg"></i><i class="fab fa-js-square fa-lg"></i></p>
                         <h3>Virgo</h3>
                         <h5>フロントエンド / ReactJS, HTML, CSS</h5>
                         <h5>バックエンド / Python Django Rest Framework</h5>
@@ -124,6 +126,7 @@
                         <a href="img/projects/portfolio_mockup.jpg" data-fancybox="images"><img src="img/projects/portfolio_mockup.jpg" alt="Card image cap" style="width:100%"></a>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p id="project-icon"><i class="fab fa-html5 fa-lg"></i><i class="fab fa-css3-alt fa-lg"></i><i class="fab fa-js-square fa-lg"></i></p>
                         <h3>Portfolio Website</h3>
                         <h5>フロントエンド / VanillaJS, AnimeJS JQuery, HTML, CSS</h5>
                         <p>ポートフォリオサイトを制作しました。
@@ -135,7 +138,7 @@
         </div>
         <!-- freelance works -->
         <div class="fade-in">
-            <h2 class="text-center">Freelance Works</h2>
+            <h2 class="text-center section_name">Freelance Works</h2>
             <p class="text-center" id="subtitle">Upworkで制作させて頂いた作品です。</p>
             <hr style="border-top: 3px solid black; width: 5%;">
             <div class="container" id="upwork">
@@ -162,7 +165,7 @@
     </div>
     <!-- about -->
     <div class="container-fluid" id="about" style="padding-top: 100px; background-color: white">
-        <h2 class="text-center">About</h2>
+        <h2 class="text-center section_name">About</h2>
         <hr style="border-top: 3px solid black; width: 5%;">
         <div class="container">
             <div class="row about text-center">
@@ -204,7 +207,7 @@
             <!-- animated skill bars -->
             <div class="row skills">
                 <div class="col-md-6 col-sm-6 col-xs-12 developer" style="padding-bottom: 2%">
-                    <h3 class="text-center"><i class="fa fa-code"></i>developer</h3>
+                    <h3 class="text-center"><i class="fas fa-code"></i>developer</h3>
                     <div id="bar">
                         <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">HTML / CSS</div>
                     </div>
@@ -241,7 +244,7 @@
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12 designer" style="border-left: 1px solid #e7e7e7">
                     <!-- designer -->
-                    <h3 class="text-center"><i class="fa fa-html5"></i>designer</h3>
+                    <h3 class="text-center"><i class="fas fa-paint-brush"></i>designer</h3>
                     <div id="bar">
                         <div class="progress-bar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">Photoshop</div>
                     </div>
@@ -265,7 +268,7 @@
     </div>
     <!-- footer -->
     <div class="footer container-fluid" id="contact">
-        <h2 class="text-center">Contact</h2>
+        <h2 class="text-center section_name">Contact</h2>
         <hr style="border-top: 3px solid black; width: 5%; padding-bottom: 1%">
         <div style="padding-top: 1%; padding-bottom: 2%;">
             <div class="row text-center">
