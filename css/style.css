@@ -117,24 +117,24 @@ body {
   }
 }
 .loading-container .loading span {
-  background-color: #5389a6;
-  border-radius: 50px;
-  display: block;
-  height: 16px;
-  width: 16px;
-  bottom: 0;
-  position: absolute;
-  transform: translateX(64px);
-  animation: loading 3.5s ease both infinite;
+	background-color: #5389a6;
+	border-radius: 50px;
+	display: block;
+	height: 16px;
+	width: 16px;
+	bottom: 0;
+	position: absolute;
+	transform: translateX(64px);
+	animation: loading 3.5s ease both infinite;
 }
 .loading-container .loading span:before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #a6dcee;
-  border-radius: inherit;
-  animation: loading2 3.5s ease both infinite;
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: #a6dcee;
+	border-radius: inherit;
+	animation: loading2 3.5s ease both infinite;
 }
 @keyframes loading {
   0% {
@@ -265,6 +265,7 @@ i{
 	opacity: 0;
 	animation: forest-move-in 1000ms 500ms forwards;
 	border-bottom: 300px solid #181d23;
+	z-index: -1;
 }
 
 @keyframes forest-move-in {
@@ -312,7 +313,7 @@ i{
 	font-family: "Yantramanav", sans-serif;
 	padding: 1rem;
 	color: white;
-	font-size: 20px;
+	font-size: 1em;
 	border: 2px solid white;
 	text-transform: uppercase;
 	border-radius: 4px;
