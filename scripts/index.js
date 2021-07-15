@@ -1,10 +1,10 @@
 $(document).ready(function() {
-  // loader 
+  /* loader */
   setTimeout(function() {
     $('.loading-container').fadeOut('fast');
-  }, 0);
+  }, 0); 
 
-  // fade into view
+  // fade into view on scroll
   $(window).scroll(function() {
     $('.fade-in').each(function() {
         var top_of_element = $(this).offset().top;
@@ -43,7 +43,6 @@ $(document).ready(function() {
   });
 
   // skill bars 
-
   $(window).scroll(function() {
     $('#bar .progress-bar').each(function() {
         var top_of_element = $(this).offset().top;
@@ -61,7 +60,7 @@ $(document).ready(function() {
   });
 
 
-  // business card animation 
+  // business card animation with animeJS
   var card = document.querySelector(".about-card");
   var playing = false;
 
