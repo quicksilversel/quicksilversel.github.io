@@ -583,7 +583,8 @@ nav ul li a:hover:after {
 .front
 {
     color: white;
-    background: black;
+    background-image: url("../img/card.png");
+	background-size: cover;
 	font-size: 50px;
 	justify-content: center;
     align-items: center;
