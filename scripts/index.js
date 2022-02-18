@@ -51,14 +51,13 @@ $(document).ready(function() {
         var top_of_screen = $(window).scrollTop();
 
         if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element) && !$(this).hasClass('is-visible')) {
-          $(this).css("width",
-          function() {
-              return $(this).attr("aria-valuenow") + "%";
-          })
+			$(this).css("width",
+			function() {
+				return $(this).attr("aria-valuenow") + "%";
+			})
         }
       });
   });
-
 
   // business card animation with animeJS
   var card = document.querySelector(".about-card");
@@ -80,6 +79,5 @@ $(document).ready(function() {
       }
     });
 });
-
 
 });
