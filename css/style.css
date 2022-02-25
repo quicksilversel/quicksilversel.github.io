@@ -1,13 +1,3 @@
-	/***
-    =============================================== 
- 
-        Portfolio page 
-        Made by Sueun Lee
-        https://github.com/quicksilversel
- 
-    =============================================== 
-	***/
-
 html {
 	scroll-behavior: smooth;
 	word-break: break-word;
@@ -391,7 +381,7 @@ nav ul li a:hover:after {
 	visibility: hidden;
 	transition: opacity 0.6s ease-out, transform 0.8s ease-out;
 	will-change: opacity, visibility;
-  }
+}
 
 .fade-in.is-visible {
 	opacity: 1;
